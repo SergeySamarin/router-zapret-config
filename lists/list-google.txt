@@ -25,3 +25,6 @@ clients6.google.com
 www.gstatic.com
 ssl.gstatic.com
 gvt1.com
+ggpht.com
+googleusercontent.com
+googleapis.com
