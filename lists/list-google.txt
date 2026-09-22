@@ -28,3 +28,7 @@ gvt1.com
 ggpht.com
 googleusercontent.com
 googleapis.com
+google.com
+l.google.com
+gstatic.com
+googleapis.com
