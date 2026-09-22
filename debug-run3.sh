@@ -3,6 +3,7 @@ kill $(cat /tmp/nfqws.pid) 2>/dev/null
 sleep 1
 ZDIR=/tmp/zapret-v72.13
 /tmp/zapret-v72.13/binaries/linux-mipsel/nfqws \
+    --debug=@/tmp/nfqws-debug.log \
     --qnum=200 --daemon --pidfile=/tmp/nfqws.pid \
     --filter-tcp=443 --dpi-desync=syndata,fake,multidisorder --dpi-desync-split-pos=midsld \
     --dpi-desync-repeats=8 --dpi-desync-fooling=md5sig,badseq \
