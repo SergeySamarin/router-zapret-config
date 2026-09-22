@@ -1,6 +1,11 @@
 #!/bin/sh
 # router-zapret-config: idempotent setup/reapply script
 
+# --- ensure required kernel modules are loaded ---
+modprobe nfnetlink 2>/dev/null
+modprobe nfnetlink_queue 2>/dev/null
+modprobe xt_NFQUEUE 2>/dev/null
+
 ZDIR=/tmp/zapret-v72.13
 REPO_RAW=https://raw.githubusercontent.com/SergeySamarin/router-zapret-config/main
 BIN=$ZDIR/binaries/linux-mipsel/nfqws
